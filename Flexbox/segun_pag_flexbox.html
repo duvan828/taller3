@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flexbox Ejemplo 2</title>
+	<style type="text/css">
+
+		
+	</style>
+</head>
+<body>
+
+<style>
+	.container-flex-grow{
+		display: flex;
+        gap: 10px;
+        text-align: center;
+	}
+	
+</style>
+
+<style>
+	.container-flex-basis{
+		display: flex;
+	}
+    .item-flex-basis{
+        color: rgb(3, 3, 3);
+        padding: 5px;
+        flex-basis: 100px;
+    }
+        .item{
+            border: 1px solid #414141;
+			background-color: #aef783;
+			margin: 10px;
+			padding: 10px;
+			font-size: 22px;
+			text-align: center;
+			color: white;
+			font-family:  'Ubuntu', sans-serif;
+			/* font-family: 'Titillium Web', sans-serif; */
+			font-weight: bold
+		}
+
+        .mi_logo{
+    position: relative;
+  
+    width: 60%;
+    
+}
+
+    .youtube{
+    position: relative;
+    top: 0px;
+    width: 35%;
+    left: 15%;
+}
+    .facebook{
+    position: relative;
+    top: 0px;
+    width: 35%;
+    left: 15%;
+}
+.instagran{
+    position: relative;
+    top: 0px;
+    width: 35%;
+    left: 15%;
+}   
+
+.busqueda{
+position: relative;
+top: 10px;
+
+width: 100%;
+}
+
+.nom_empre{
+    position: absolute;
+    top: 3px;
+    left: 180px;
+}
+
+.container-flex-grow .item-flex-basis .imagen_muestra{
+position: relative;
+height: 350px;
+width: 100%;
+}
+
+.container-flex-grow .columnas{
+   width: 50%;
+}
+
+.item_titulo_curso{
+    display: flex;
+    left: 100px;
+    color: rgb(196, 87, 87);
+    width: 38%;
+}
+</style>
+<div class="container-flex-grow">
+	<div class="item-flex-basis"><img class="mi_logo" src="png/logo2.jpg" alt="..."></div>
+    <div class="item-flex-basis" style="flex-grow: 0.3;"> <div class="nom_empre"><h4 >Desarrollo Web I</h4></div></div>
+	<div class="item-flex-basis" style="flex-grow: 1;">  <input class="busqueda" type="search" placeholder="Buscar cursos" aria-label="Search"></div>
+	<div class="item-flex-basis"><img class="youtube" src="png/001-youtube.png" alt="..."></div>
+    <div class="item-flex-basis"><img class="facebook" src="png/002-facebook.png" alt="..."></div>
+    <div class="item-flex-basis"><img class="instagran" src="png/003-instagram.png"  alt="..."></div>
+</div>
+<hr>
+
+<div</div>
+<div class="container-flex-grow" >
+	<div class="columnas" style="display: flex; flex-direction: column;" style="flex-grow: 1; height: 350px;">
+        <div class="item_titulo_curso">
+        <h1 >Curso de <br>introduccion <br> al HTML</h1>
+    </div>
+    <div class="item_titulo_curso">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore saepe quae ducimus magnam architecto dignissimos tempora quos nesciunt ipsam earum cum sequi obcaecati, quia libero? Soluta veritatis commodi placeat!
+    </div>
+    <br><br>
+    <div class="item_titulo_curso">
+        <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Comenzar</button>
+    </div>
+    </div>
+    <div class="item item-flex-basis" style="flex-grow: 1; height: 350px;"><img class="imagen_muestra" src="png/imagen_Muestra.jpg" alt=""></div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .algo{
+        display: flex;
+    }
+	.tomate{
+		background-color: tomato;
+        width: 63%;
+	}
+</style>
+<div class="algo" style="display: flex; flex-direction: column;">
+	<div class="item ancho-md tomate" style=" height: 200px">Item 1</div>
+	<div class="item ancho-md tomate" style=" height: 650px">Item 2</div>
+    <div class="item item-flex-basis" style="position: absolute; left: 1000px;  height: 890px; "><div class="item item-flex-basis" style=" height: 650px;">Desarrollo Web I</div></div>
+</div>
+
+
+
+
+
+
+<style>
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contenedor-foo{
+    text-align: center;
+}
+
+.contenedor-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #939797;
+}
+</style>
+
+<footer id="contacto">
+    <div class="contenedor-footer">
+        <div class="contenedor-foo">
+            <h4>Telefono</h4>
+            <p>3203352685</p>
+        </div>
+        <div class="contenedor-foo">
+          <h4>Email</h4>
+          <p>jesuslagares24@gmail.com</p>
+      </div>
+      <div class="contenedor-foo">
+          <h4>Redes sociales</h4>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      
+    </div>
+    <h2 class="titulo-final">&copy; Ing jesus lagares </h2>
+</footer>
